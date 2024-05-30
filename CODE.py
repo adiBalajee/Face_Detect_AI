@@ -91,7 +91,7 @@ def predict_emotion(image, model):
 # Real-time emotion recognition
 def real_time_emotion_recognition():
     # Start video capture
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(1) # change to 0 based on model of computer (older mac + windows is 0) (check settings)
 
     while True:
         # Capture frame-by-frame
